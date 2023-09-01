@@ -1,0 +1,33 @@
+@import 'variables';
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+main {
+    background-color: $main-color;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/about';
+@import 'blocks/phone';
+@import 'blocks/receive';
+@import 'blocks/why';
+@import 'blocks/socials';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'blocks/cookie';

@@ -1,0 +1,84 @@
+.socials {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+    &__grow {
+        position: relative;
+        padding: 40px 0;
+        border: 1px solid #cfcfcf;
+        border-radius: 40px;
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        h4 {
+            font-family: Outfit;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 106%;
+            text-align: center;
+            margin-bottom: 28px;
+            color: #000000;
+        }
+        
+    }
+    &__brand {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+        &__descr {
+            padding-left: 60px;
+            max-width: 882px;
+            margin-right: 33px;
+            h3 {
+                font-family: Outfit;
+                font-size: 96px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 106%;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            span {
+                display: block;
+                max-width: 537px;
+                color: #000000;
+                font-family: Outfit;
+                font-size: 20px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 120%;
+            }
+        }
+        &__items {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 29px 65px 45px 0;
+            &__item {
+                margin-right: 10px;
+                width: 90px;
+                height: 90px;
+                &:nth-child(2n) {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+    &__places {        
+        margin-top: 100px;
+        &__items {
+            display: flex;
+            padding: 0 60px;
+            &__item {
+                margin-right: 90px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,98 @@
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 60px 20px 60px;
+    &__links {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;            
+            &__img {
+                width: 51px;
+                height: 51px;
+            }
+            &__budss {
+                text-align: center;
+                font-family: Outfit;
+                font-size: 37px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 17px;
+                text-transform: lowercase;
+                color: #FFFFFF;
+            }
+        }
+        &__choice {
+            display: flex;
+            &__businesses {
+                margin-right: 40px;
+                color: #FFFFFF;
+                font-family: Outfit;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            &__customers {
+                color: #FFFFFF;
+                font-family: Outfit;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        &__btns {
+            display: flex;
+            button {
+                margin-right: 40px;
+            }
+            &__apple {
+                margin-right: 20px;
+                max-width: 194px;
+                height: 57px;
+            }
+            &__android {
+                max-width: 194px;
+                height: 57px;
+            }
+        }
+    }
+    &__line {
+        color: #444444;
+        margin-bottom: 20px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: #B9B9B9;
+            font-family: Outfit;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            line-height: 140%;
+        }
+        &__docs {
+            display: flex;
+            a {
+                color: #B9B9B9;
+                font-family: Outfit;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                line-height: 140%;                
+                text-decoration: underline;
+                margin-right: 20px;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

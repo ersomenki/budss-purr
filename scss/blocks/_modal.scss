@@ -1,0 +1,115 @@
+.overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    z-index: 9999;
+}
+.phone-input {
+    position: relative;
+    margin-bottom: 10px;
+    &__country {
+        position: absolute;
+        width: 22px;
+        height: 16px;
+        left: 12px;
+        top: 37px;
+        z-index: 50;
+    }    
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: transparent solid 2px;
+    border-radius: 16px;    
+    background: #FFF;
+    max-width: 337px;
+    padding: 40px;
+    position: relative;
+    &__form {
+        margin-bottom: 20px;
+        &__privacy {
+            color: #000000;
+            font-family: Outfit, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+        &__label {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            &__name {
+                font-family: Outfit;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 22px;
+                margin-bottom: 4px;
+                span {
+                    color: #FF6C2D;
+                    margin-left: 2px;
+                }
+            }
+            &__input {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #FFF;
+                border: 1px solid #F1F1F1;
+                border-radius: 14px;
+                &_fav {
+                    font-family: Outfit;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 157%;
+                    padding: 10px 16px;                    
+                    width: 100%;
+                    margin: 0;
+                    background: 0;
+                    border: 0;
+                    font: inherit;
+                    outline: none;
+                    &:invalid {
+                        border-color: red;
+                    }
+                    &_phone {
+                        font-family: Outfit;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-style: normal;
+                        line-height: 157%;
+                        padding: 10px 16px;                    
+                        width: 100%;
+                        margin: 0;
+                        background: 0;
+                        border: 0;
+                        font: inherit;
+                        outline: none;
+                        padding-left: 40px;
+                    }                                                                         
+                }
+                 
+            }
+        }
+    }
+    
+}
+.phone-number {
+    padding-left: 40px;
+}

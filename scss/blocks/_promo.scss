@@ -1,0 +1,75 @@
+.promo {
+    position: relative;
+    background-color: $main-color;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    &__subheader {
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 71px;  
+        padding-left: 25px;      
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;            
+            span {
+                color: #FFFFFF;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 37px;
+                line-height: 17px;
+                text-transform: lowercase;
+            }
+        }
+    }
+    &__info {
+        position: relative;
+        display: flex;
+        padding: 130px 0 0 110px;
+        margin: 0 auto;
+        height: 821px;
+        &__descr {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            max-width: 670px;
+            h1 {
+                color: #FFFFFF;
+                font-family: Outfit,sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 96px;
+                line-height: 106%;                
+                margin-bottom: 20px;
+            }
+            &__text {
+                max-width: 534px;
+                color: #FFFFFF;
+                font-family: Outfit,sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 120%;
+                margin-bottom: 40px;
+            }
+        }
+        &__pic {
+            overflow: hidden;
+            img {                
+                width: 700px;
+                height: 733px;                
+            }
+        }
+    }
+}

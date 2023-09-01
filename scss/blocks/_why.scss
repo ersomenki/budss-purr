@@ -1,0 +1,153 @@
+.why {
+    padding: 100px 70px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1440px;
+        h2 {
+            color: #FFFFFF;
+            font-family: Outfit;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 106%;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #FFFFFF;
+            font-family: Outfit;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0px auto 60px;
+        }
+    }
+    &_colored {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 386px;
+            height: 34px;
+            background-color: #A64CED;
+            border-radius: 30px;
+            transform: rotate(-1.69deg) translate(-11px, 8px);
+        }
+        span {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__descr {
+            position: relative;
+            max-width: 410px;
+            z-index: 2;
+            text-align: left;
+            h4 {
+                color: #000000;
+                font-family: Outfit;
+                font-size: 47px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;                
+            }
+            span {
+                color: #000000;
+                font-family: Outfit;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;                
+            }
+        }
+        &_top {
+            position: relative;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            &_left {
+                margin-left: 0;
+                margin-right: 20px;
+                padding: 36px 40px 62px;                
+                display: flex;
+                justify-content: flex-end;
+                background: #f5f5f5;
+                border-radius: 30px;
+                overflow: hidden;
+                width: 733px;
+                max-height: 362px;
+                position: relative;                
+                &__img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    img {
+                        height: 400px;
+                    }
+
+                }
+                
+            }
+            &_right {
+                width: 547px;
+                max-height: 362px;
+                padding: 36px 40px 62px;                
+                display: flex;
+                justify-content: flex-start;
+                background: #f5f5f5;
+                border-radius: 30px;
+                overflow: hidden;
+                position: relative;
+                &__img {
+                    position: absolute;
+                    left: 400px;
+                    top: 0;
+                    img {
+                        height: 360px;
+                    }
+                }
+            }
+        }
+        &_bottom {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            &_left {
+                padding: 36px 0 62px 40px;
+                display: flex;
+                background: #F5F5F5;
+                border-radius: 30px;
+                overflow: hidden;
+                position: relative;
+                width: 618px;                
+                margin-right: 20px;
+                &__img {
+                    position: absolute;
+                    right: 0;
+                    bottom: -5px;
+                }
+            }
+            &_right {
+                display: flex;
+                background: #F5F5F5;
+                border-radius: 30px;
+                overflow: hidden;
+                position: relative;
+                width: 801px;
+                margin-left: 20px;
+                padding: 36px 0 38px 40px;                
+                &__img {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+}   

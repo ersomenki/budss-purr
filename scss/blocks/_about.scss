@@ -1,0 +1,85 @@
+.about {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 38px 0 110px;
+    h2 {
+        font-family: Outfit;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 106%;
+        color: #ffffff;
+        margin-bottom: 80px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &__descr {
+            max-width: 410px;
+            color: #FFFFFF;
+            font-family: Outfit,sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: normal;
+            &_bg {                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 353px;
+                    height: 34px;
+                    background-color: #A64CED;
+                    border-radius: 30px;
+                    transform: rotate(-1.69deg) translate(0, 10px);
+                    z-index: 0;
+                }
+                span {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+        }
+        &__features {
+            display: flex;
+            flex-wrap: wrap;
+            min-width: 730px;
+            padding-left: 80px;
+            &__item {
+                display: flex;
+                flex-direction: column;
+                margin-right: 139px;
+                max-width: 336px;
+                img {
+                    margin-bottom: 10px;
+                    width: 100px;
+                    height: 100px;
+                }
+                &__subtittle {
+                    color: #FFFFFF;
+                    font-family: Outfit,sans-serif;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                }
+                &__descr {
+                    color: #FFFFFF;
+                    font-family: Outfit,sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+    &__pic {
+        position: absolute;
+        right: 1350px;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+}

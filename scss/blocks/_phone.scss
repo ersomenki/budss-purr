@@ -1,0 +1,121 @@
+.phone {
+    position: relative;
+    padding: 100px 0;
+    margin: 0 auto;
+    min-height: 737px;
+    &__main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        z-index: 2;
+        width: 308px;
+        height: 623px;
+    }
+    &__bg {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        overflow: hidden;
+        margin-bottom: 68px;
+        &__item {            
+            margin-bottom: 68px;
+            display: flex;            
+            
+            &__elem {
+                color: #2FDBBC;
+                font-family: Outfit;
+                font-size: 128px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 106%;                
+                white-space: nowrap;
+                animation: tooSpinRight 12s linear infinite; 
+                animation-delay: -12; 
+                @keyframes tooSpinRight {
+                    0% {
+                        transform: translateX(-100%);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+                
+                &:nth-of-type(2) {
+                    animation: spinRight 12s linear infinite;
+                    animation-delay: -6s;
+                    @keyframes spinRight {
+                        0% {
+                            transform: translateX(-200%);
+                        }
+                        100% {
+                            transform: translateX(0);
+                        }
+                    }
+                }            
+                  
+                span {
+                    text-shadow: 1px 1px 0 #444444, -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444, 1px 1px 0 #444444;
+                    color: #181818;
+                }
+                
+                
+            }    
+                     
+        }
+    }    
+}
+
+.purple {
+    color:#A64CED;
+    animation: tooSpinLeft 16s linear infinite;  
+    animation-delay: -16s;
+    @keyframes tooSpinLeft {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+    &:nth-of-type(2) {
+        animation: spinLeft 16s linear infinite;
+        animation-delay: -8s;
+        @keyframes spinLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+    }
+}
+.orange {
+    color:#FFAA4C;
+    animation: tooSpinRight 14s linear infinite; 
+    animation-delay: -14; 
+    @keyframes tooSpinRight {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    &:nth-of-type(2) {
+        animation: spinRight 14s linear infinite;
+        animation-delay: -7s;
+        @keyframes spinRight {
+            0% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+}
