@@ -100,9 +100,13 @@
                 }
             }
             &__features {
-                padding-left: 172px;
+                min-width: 275px;
+                flex-direction: column;
+                padding-left: 16px;
                 &__item {
-                    margin-bottom: 60px;
+                    margin-bottom: 60px;   
+                    margin-right: 0;
+                    padding-right: 20px;                 
                 }
             }
         }
@@ -235,6 +239,11 @@
     }
     .footer {
         padding: 40px 16px;
+        &__info {
+            &__docs {
+                display: none;
+            }
+        }
         &__links {
             flex-direction: column;
             align-items: flex-start;
@@ -256,6 +265,9 @@
                     margin-bottom: 16px;
                     &:last-child {
                         margin-bottom: 0;
+                    }
+                    &:nth-last-child(-n+3) {
+                        display: block;
                     }
                 }
             }
