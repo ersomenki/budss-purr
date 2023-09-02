@@ -29,6 +29,11 @@
         }
         &__choice {
             display: flex;
+            a {
+                &:nth-last-child(-n+3) {
+                    display: none;
+                }
+            }
             &__businesses {
                 margin-right: 40px;
                 color: #FFFFFF;
@@ -91,10 +96,7 @@
                 margin-right: 20px;
                 &:nth-last-child(1) {
                     margin-right: 0;
-                }
-                &:nth-last-child(-n+3) {
-                    display: none;
-                }
+                }                
             }
         }
     }
