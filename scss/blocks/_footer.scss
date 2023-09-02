@@ -92,6 +92,9 @@
                 &:nth-last-child(1) {
                     margin-right: 0;
                 }
+                &:nth-last-child(-n+3) {
+                    display: none;
+                }
             }
         }
     }
