@@ -40,10 +40,24 @@ window.addEventListener('DOMContentLoaded', ()=> {
     }    
     interactive();
     
+    function validateForm() {
+        const form = document.querySelector('.contact-form');
+        const err = document.querySelectorAll('.modal__form__label__error');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            let isValid = true;
+            form.querySelectorAll('.modal__form__label__input_fav').forEach(input => {
+                if (input.value === "" || input.value === null) {
+                    isValid = false;                    
+                } 
+            })
+            isValid ? err.forEach(err => err.style.display = 'none') : err.forEach(err => err.style.display = 'block');
+        })
+    }
     
-    
+    validateForm();
 })
 
-    
+
         
     

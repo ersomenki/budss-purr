@@ -50,6 +50,15 @@
             flex-direction: column;
             align-items: flex-start;
             margin-bottom: 10px;
+            &__error {
+                display: none;
+                color: #EC1211;
+                font-family: Outfit;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
             &__name {
                 font-family: Outfit;
                 font-size: 14px;

@@ -176,9 +176,9 @@
             <div class="why__wrapper">
                 <h2>Why Budss</h2>
                 <h3>We Provide Advanced Payment Solutions 
-                    <div class="why_colored">
+                    <p class="why_colored">
                     <span>To Grow Your Business</span>
-                    </div>
+                    </p>
                 </h3>
                 <div class="why__cards">
                     <div class="why__cards_top">
@@ -317,7 +317,7 @@
                     </svg>
             </button>
             <div>
-                <form>
+                <form class="contact-form">
                     <div class="modal__form">
                         <label class="modal__form__label">
                             <div class="modal__form__label__name">
@@ -325,7 +325,10 @@
                                 <span>*</span>
                             </div>
                             <div class="modal__form__label__input">
-                                <input class="modal__form__label__input_fav" type="text" placeholder="Enter name" name="Name">
+                                <input class="modal__form__label__input_fav"  type="text" placeholder="Enter name" name="Name" onsubmit="return validateForm()">
+                            </div>
+                            <div class="modal__form__label__error">
+                                This field is required.
                             </div>
                         </label>
                         <label class="modal__form__label">
@@ -334,7 +337,10 @@
                                 <span>*</span>
                             </div>
                             <div class="modal__form__label__input">
-                                <input class="modal__form__label__input_fav" autocomplete="email" type="email" placeholder="Enter email" name="Email">
+                                <input class="modal__form__label__input_fav" autocomplete="email" type="email" placeholder="Enter email" name="Email" onsubmit="return validateForm()">
+                            </div>
+                            <div class="modal__form__label__error">
+                                This field is required.
                             </div>
                         </label>
                         <div class="phone-input">
@@ -347,7 +353,10 @@
                                     <span>*</span>
                                 </div>
                                 <div class="modal__form__label__input">
-                                    <input class="modal__form__label__input_fav_phone" autocomplete="tel" type="tel" placeholder="+7 999 000 00 00" name="Email" maxlength="18">
+                                    <input class="modal__form__label__input_fav_phone" autocomplete="tel" type="tel" placeholder="+7 999 000 00 00" name="Email" maxlength="18" onsubmit="return validateForm()">
+                                </div>
+                                <div class="modal__form__label__error">
+                                    This field is required.
                                 </div>
                             </label>
                         </div>  
@@ -371,7 +380,7 @@
                     <p class="modal__form__privacy">By submitting this form you are agreeing to Budss's
                         <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a> 
                     </p>
-                    <button class="btn btn-modal btn__contact">Contact sales</button>
+                    <button type="submit" class="btn btn-modal btn__contact">Contact sales</button>
                 </form>
             </div>
         </section>
