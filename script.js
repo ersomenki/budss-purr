@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
             e.preventDefault();
             let isValid = true;
             form.querySelectorAll('.modal__form__label__input_fav').forEach(input => {
-                if (input.value === "" || input.value === null) {
+                if (!input.value) {
                     isValid = false;                    
                 } 
             })
@@ -55,7 +55,13 @@ window.addEventListener('DOMContentLoaded', ()=> {
         })
     }
     
-    validateForm();
+    const submitBtn = document.getElementById('form-submit');
+    submitBtn.addEventListener('click', (e)=> {
+        if(e.target === submitBtn) {
+            validateForm();
+        }
+    })
+    
 })
 
 
